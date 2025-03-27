@@ -27,7 +27,7 @@ body {
     margin: 0 auto 20px; /* Центрируем и добавляем отступ снизу */
 }
 
-.containerAWG, .containerClash {
+.containerAWG {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -56,24 +56,12 @@ body {
     margin-right: 10px;
 	margin-top: -10px;
 }
-.hiddify-icon {
-    width: 45px; /* Размер иконки */
-    height: 45px;
-    margin-right: 10px;
-	margin-top: -10px;
-}
 
 .amnezia-text {
     font-size: 20px;
     font-weight: bold;
     color: #333;
 	
-}
-.karing-text {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-	margin-right: 10px;
 }
 
 img {
@@ -115,14 +103,14 @@ button.button--loading {
     display: none;
 }
 
-#generateButton,#generateButton2,#generateButton5,#generateButton6 {
+#generateButton,#generateButton2,#generateButton3,#generateButton4,#generateButton5,#generateButton7,#generateButton8,#generateButton9,#generateButton10,#generateButton11 {
     background: linear-gradient(90deg, #eeac43, #f15874);
 }
-#generateButton3,#generateButton4,#generateButton7,#generateButton8 {
+#generateButton6,#generateButton12 {
     background: linear-gradient(90deg, #eeac43, #f15874);margin-bottom: 4px;
 }
 
-#telegramButton,#BoostyButton,#githubButton,#DonationAlertsButton,#BoostyNewButton {
+#githubButton {
     background: linear-gradient(90deg, #2a3797, #0d87d2);
 	width: 100%;
     max-width: 400px;
@@ -139,19 +127,6 @@ button:disabled {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-#newButtons {
-    visibility: hidden;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transition: opacity 0.5s ease, height 0.5s ease, visibility 0.5s ease;
-}
-
-#newButtons.show {
-    visibility: visible;
-    opacity: 1;
-    height: 120px; /* Фиксированная высота для плавной анимации */
-}	
 
 
 
@@ -182,6 +157,7 @@ button:disabled {
     display: none;
 }
 
+
 @media (max-width: 730px) {
 	       
 	.grid-container {
@@ -193,18 +169,5 @@ button:disabled {
    #status {
         display: none; /* или inline, inline-block, flex и т.д., в зависимости от нужного отображения */
    }
-   
-	.containerClash {
-	
-		order: 3; /* Перемещаем Clash вниз */
-    }
-
-    .containerAWG:nth-of-type(4) { /* Блок NekoBox */
-        order: 2;		/* Перемещаем NekoBox на место Clash */
-    }
-	.containerAWG:nth-of-type(2) { /* Блок NekoBox */
-        margin-bottom: 60px;		/* Перемещаем NekoBox на место Clash */
-    }
 		
-    }
 }

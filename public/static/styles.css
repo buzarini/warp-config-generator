@@ -1,138 +1,153 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
- 
-    background-color: #f4f4f4;
-    font-family: 'Roboto', sans-serif;
-    width: 100%; /* Занимает всю ширину */
-    margin: 0; /* Убираем отступы */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f4f4f4;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;	/* Занимает всю ширину */
+	margin: 0;	/* Убираем отступы */
 }
+
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Центрируем элементы по горизонтали */
-    text-align: center; /* Центрируем текст внутри элементов */
-    width: 100%;
-    max-width: 700px; /* Ограничиваем ширину контейнера */
-    margin: 0 auto; /* Центрируем контейнер на странице */
-    padding: 20px; /* Добавляем отступы */
+	display: flex;
+	flex-direction: column;
+	align-items: center;	/* Центрируем элементы по горизонтали */
+	text-align: center;	/* Центрируем текст внутри элементов */
+	width: 100%;
+	max-width: 520px;	/* Ограничиваем ширину контейнера */
+	margin: 0 auto;	/* Центрируем контейнер на странице */
+	padding: 20px;	/* Добавляем отступы */
 }
+
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Два столбца */
-    gap: 20px; /* Расстояние между контейнерами */
-    width: 100%;
-    max-width: 700px; /* Увеличиваем максимальную ширину, чтобы вместить два контейнера */
-    margin: 0 auto 20px; /* Центрируем и добавляем отступ снизу */
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);	/* Два столбца */
+	gap: 20px;	/* Расстояние между контейнерами */
+	width: 100%;
+	max-width: 520px;	/* Увеличиваем максимальную ширину, чтобы вместить два контейнера */
+	margin: 0 auto 20px;	/* Центрируем и добавляем отступ снизу */
 }
 
 .containerAWG {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    width: 95%; /* Занимает всю ширину */
-    max-width: 300px; /* Уменьшаем ширину контейнера */
-    margin: 0 auto; /* Центрируем и добавляем отступ снизу */
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	padding: 20px;
+	background-color: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	width: 95%;	/* Занимает всю ширину */
+	max-width: 210px;	/* Уменьшаем ширину контейнера */
+	margin: 0 auto;	/* Центрируем и добавляем отступ снизу */
 }
 
 .header {
-    display: flex;
-    justify-content: center; /* Выравниваем по центру */
-    align-items: center;
-    margin-bottom: 10px; /* Отступ снизу */
-    width: 100%; /* Занимает всю ширину */
-    max-width: 400px; /* Ограничиваем ширину, как у контейнера */\
+	display: flex;
+	justify-content: center;	/* Выравниваем по центру */
+	align-items: center;
+	margin-bottom: 10px;	/* Отступ снизу */
+	width: 100%;	/* Занимает всю ширину */
+	max-width: 400px;	/* Ограничиваем ширину, как у контейнера */
 }
 
 .amnezia-icon {
-    width: 50px; /* Размер иконки */
-    height: 50px;
-    margin-right: 10px;
+	width: 50px;	/* Размер иконки */
+	height: 50px;
+	margin-right: 10px;
 	margin-top: -10px;
 }
 
 .amnezia-text {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-	
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
 }
 
 img {
-    max-width: 400px;
+	max-width: 400px;
 }
-
 
 button {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    font-size: 18px;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 10px 20px;
+	font-size: 18px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
 	transition: background 0.3s ease, transform 0.2s ease;
 }
+
 button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-} 
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .button--loading::after {
-    content: "";
-    width: 15px;
-    height: 15px;
-    border: solid rgba(0, 0, 0, 0.1);
-    border-top-color: #f15874;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
+	content: "";
+	width: 15px;
+	height: 15px;
+	border: solid rgba(0, 0, 0, 0.1);
+	border-top-color: #f15874;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
 }
 
 button.button--loading {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .button--loading .button__text {
-    display: none;
+	display: none;
 }
 
-#generateButton,#generateButton2,#generateButton3,#generateButton4,#generateButton5,#generateButton7,#generateButton8,#generateButton9,#generateButton10,#generateButton11 {
-    background: linear-gradient(90deg, #eeac43, #f15874);
+#generateButton,
+#generateButton2,
+#generateButton3,
+#generateButton4,
+#generateButton5,
+#generateButton7,
+#generateButton8,
+#generateButton9,
+#generateButton10,
+#generateButton11 {
+	background: linear-gradient(90deg, #eeac43, #f15874);
 }
-#generateButton6,#generateButton12 {
-    background: linear-gradient(90deg, #eeac43, #f15874);margin-bottom: 4px;
+
+#generateButton6,
+#generateButton12 {
+	background: linear-gradient(90deg, #eeac43, #f15874);
+	margin-bottom: 4px;
 }
 
 #githubButton {
-    background: linear-gradient(90deg, #2a3797, #0d87d2);
+	background: linear-gradient(90deg, #2a3797, #0d87d2);
 	width: 100%;
-    max-width: 400px;
-    margin: 10px auto;
+	max-width: 330px;
+	margin: 10px auto;
 }
 
-
 button:disabled {
-    cursor: not-allowed;
-    opacity: 0.7;
+	cursor: not-allowed;
+	opacity: 0.7;
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
-
-
 #info {
-    margin-bottom: 20px;
-    color: red;
+	margin-bottom: 20px;
+	color: red;
 	border-radius: 5px;
 	box-shadow: 0 0 0 1px red inset;
 	padding: 15px;
@@ -140,9 +155,8 @@ button:disabled {
 	display: none;
 }
 
-
 #status {
-    color: red;
+	color: red;
 	border-radius: 5px;
 	box-shadow: 0 0 0 1px red inset;
 	padding: 15px;
@@ -150,24 +164,23 @@ button:disabled {
 }
 
 #status:empty {
-    display: none;
+	display: none;
 }
 
 #info:empty {
-    display: none;
+	display: none;
 }
 
-
 @media (max-width: 730px) {
-	       
 	.grid-container {
-		grid-template-columns: 1fr; /* Один столбец на мобильных устройствах */}
+		grid-template-columns: 1fr;	/* Один столбец на мобильных устройствах */
+	}
+
 	#info {
-        display: block; /* или inline, inline-block, flex и т.д., в зависимости от нужного отображения */
-   }
-   
-   #status {
-        display: none; /* или inline, inline-block, flex и т.д., в зависимости от нужного отображения */
-   }
-		
+		display: block;	/* или inline, inline-block, flex и т.д., в зависимости от нужного отображения */
+	}
+
+	#status {
+		display: none;	/* или inline, inline-block, flex и т.д., в зависимости от нужного отображения */
+	}
 }
